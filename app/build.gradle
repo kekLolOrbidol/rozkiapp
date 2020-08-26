@@ -22,6 +22,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    signingConfigs {
+
+        production {
+            storeFile file("../keystore/android_release.keystore")
+            storePassword "konuk_rozkiapp_release_pass"
+            keyAlias "konuk_rozkiapp_release"
+            keyPassword "м_release_pass"
+        }
+
+        debug {
+            storeFile file("../keystore/android_debug.keystore")
+            storePassword "konuk_rozkiapp_debug_pass"
+            keyAlias "konuk_rozkiapp_debug"
+            keyPassword "konuk_rozkiapp_debug_pass"
+        }
+
+    }
 }
 
 dependencies {
