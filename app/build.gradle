@@ -29,7 +29,7 @@ android {
             storeFile file("../keystore/android_release.keystore")
             storePassword "konuk_rozkiapp_release_pass"
             keyAlias "konuk_rozkiapp_release"
-            keyPassword "м_release_pass"
+            keyPassword "konuk_rozkiapp_release_pass"
         }
 
         debug {
